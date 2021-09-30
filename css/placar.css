@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.nav{
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav h2{
+    width: 400px;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px; 
+    margin-left: 20px;
+    
+    font-family: 'Sigmar One', cursive'
+
+    
+}
+
+.h2-b{
+    
+    font-size: 90px;
+    color: tomato;
+
+    transition: all 1s;
+
+}
+
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top:50px ;
+    margin-right: 30px;
+
+    text-decoration: none;
+    list-style: none;
+    position: relative;   
+
+    text-shadow: 10px 10px  40px #fff;
+}
+
+.menu li a:hover{
+    color: #ce7d35;
+    
+}
+
+.menu a{
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    margin-left: 80px;
+    font-family: fantasy;
+}
+
+.menu u{
+    list-style: none;
+}
+
+
+
+.sub-menu{
+    position: absolute;
+    
+
+    margin-top: 30px;
+    transition: 0.2s;
+    opacity: .9;
+    visibility: hidden;
+    z-index: 8;
+
+    list-style: none;
+    border-radius: 40px;
+
+}
+
+.sub-menu li a{
+    
+    display: block;
+    padding: px;
+    color:black;
+    font-weight:bold;
+    font-family:cursive;
+    list-style: none;
+
+    border: solid;
+    border-radius: 5px ;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    background-color: coral;
+}
+
+.menu :hover .sub-menu{
+    visibility: visible;
+    list-style: none;
+    transition: all .1s;
+}
+
+
+.sub-menu2{
+    position: absolute;
+    width: 42%;
+
+    margin-top: 30px;
+    transition: 1s;
+    opacity: .9;
+    visibility: hidden;
+    z-index: 8;
+
+    list-style: none;
+    border-radius: 40px;
+}
+
+.sub-menu2 img{
+    width: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+
+.sub-menu2 li a{
+    
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu :hover .sub-menu2{
+    visibility: visible;
+    list-style: none;
+
+    transition: all .1s;
+    
+}
+
+/* PLACAR */
+.placar{
+    margin: 10px auto;
+}
+
+.placar H1{
+    
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+
+    margin: 50px auto;
+}
+
+.placar-1{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+
+.placar img{
+    width: 600px;
+    height: 500px;
+
+    margin: 20px 20px;
+}
+
+
+/* MOVIL */
+
+
+@media screen and (max-width:1024px){
+    .nav h2{
+        width: 70vh;
+        font-size: 100px;
+
+        text-align: center;
+    }
+
+    .nav b{
+        font-size: 120px;
+    }
+
+    .nav a{
+        font-size: 50px;
+        margin-left: 100px;
+    }
+
+    .placar h1{
+        font-size: 120px;
+        margin-top: 200px;
+    }
+
+    
+
+    .placar img{
+        margin-left: 10px;
+        width: 900px;
+        height: 600px;
+    }
+}
+
+/* responsive  */
+
+@media screen and (max-width:414px){
+    .menu{
+        width: 580px;
+    }
+    .menu a{
+        font-size: 40px;
+        margin-left: 40px;
+    }
+
+    .nav h2{
+        font-size: 70px;
+        width: 550px;
+        margin-left: 50px;
+    }
+    
+
+    .imagen h1{
+        font-size: 60px;
+        top: 400px;
+        left: 10px;
+    }
+
+    .imagen i{
+        font-size: 20px;
+    }
+
+    .placar h1{
+        font-size: 90px;
+
+        margin-top: 60px;
+        margin-left: 190px;
+
+    }
+
+    .placar-1{
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+    }
+    .placar-1 img{
+        width: 800px;
+        height: 500px;
+        
+    }
+}
+
+
+@media screen and (max-width:360px){
+
+    .menu{
+        width: 520px;
+    }
+
+
+    .menu a{
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .nav h2{
+        width: 500px;
+        font-size: 60px;
+        margin-left: 20px;
+    }
+
+    .placar h1{
+        font-size: 70px;
+    }
+
+    
+    .placar img{
+        width: 600px;
+        margin: 0 10px;
+    }
+
+
+    
+}
